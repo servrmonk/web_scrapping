@@ -16,9 +16,9 @@ app.get("/", (req, res) => {
 app.post("/preview", getUrlPreview);
 
 // Set the port either from the environment or default to 3000
-
+const PORT = process.env.PORT || 3000;
 app.listen(3000, () => {
-  console.log(`Server running at 3000`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
 
 // Handle uncaught errors

@@ -40,7 +40,7 @@ function App() {
       setData(null);
 
       const { data } = await axios.post(
-        "http://localhost:3000/preview",
+        `https://web-scrapping-worc.onrender.com/preview`,
         values,
       );
       setData(data);
